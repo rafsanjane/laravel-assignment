@@ -33,9 +33,9 @@ foreach ($words as $word) {
 *
 * 2.Write a PHP function to concatenate two strings, but with the second string starting from the end of the first string. 
 *
-* Using this usort
+* 
 *
-*https://www.php.net/manual/en/function.usort.php
+*
 *
 */
 
@@ -69,9 +69,9 @@ echo $result; // outputs "olleHworld"
 *
 * 3.Write a PHP function to remove the first and last element from an array and return the remaining elements as a new array. 
 *
-* Using this usort
+* 
 *
-*https://www.php.net/manual/en/function.usort.php
+*
 *
 */
 
@@ -99,9 +99,9 @@ print_r($result); // outputs "olleHworld"
 *
 * 4.Write a PHP function to check if a string contains only letters and whitespace.
 *
-* Using this usort
+* 
 *
-*https://www.php.net/manual/en/function.usort.php
+*
 *
 */
 
@@ -134,9 +134,9 @@ echo Letters_And_Space($str2);
 *
 * 5.Write a PHP function to find the second largest number in an array of numbers.
 *
-* Using this usort
+* 
 *
-*https://www.php.net/manual/en/function.usort.php
+*
 *
 */
 
