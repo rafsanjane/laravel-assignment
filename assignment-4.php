@@ -27,6 +27,19 @@ usort($words, "mySort");
 foreach ($words as $word) {
     echo $word . "\n";
 }
+//I see issue with input and ouput and implementations.
+//Mistake 1: input should array of string so 
+$input = ['My','name','Rafsan'];
+
+//Mistake 2: They have asked for a functions that will sort the array
+function sortingArrayOfString($array){
+    usort($array,function($el1,$el2){
+        return strlen($el1) - strlen($el2);// no need conditions for -1,1,0 because usort work on positive and negetive number and zero
+    });
+}
+//Then call the function
+print_r(sortingArrayOfString($input));
+
 
 
 /* 
@@ -38,7 +51,7 @@ foreach ($words as $word) {
 *
 *
 */
-
+//I am also confuse about the questions, what was actully they are asking :p 
 
 function concat_str($str1, $str2)
 {
@@ -75,7 +88,7 @@ echo $result;
 *
 */
 
-
+//Great solutions. Smart!
 
 function remove_first_last($myAray)
 {
@@ -104,7 +117,7 @@ print_r($result);
 *
 *
 */
-
+//No comments, I solved it with regular expresions, copy pest ;)
 function Letters_And_Space($str)
 {
 
@@ -144,9 +157,11 @@ echo Letters_And_Space($str2);
 function findSecondLargest($numbers)
 {
     rsort($numbers);
-
     return $numbers[1];
 }
+//This sollutions is not correct Think about if input is [30,30,20,10,5]
+//output should be 20 but your function will return 30.
+// So when we checking 2nd largest item in an array we have to check all items.
 
 $numbers = [10, 20, 30, 40, 50];
 $secondLargest = findSecondLargest($numbers);
