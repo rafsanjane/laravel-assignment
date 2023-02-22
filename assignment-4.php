@@ -53,7 +53,7 @@ $str2 = "Rafsan";
 
 $result = concat_str($str1, $str2);
 
-echo $result; // outputs "olleHworld"
+echo $result; 
 
 
 
@@ -91,7 +91,7 @@ $myAray = ["PHP", "JS", "Python", "HTML", "CSS",];
 
 $result = remove_first_last($myAray);
 
-print_r($result); // outputs "olleHworld"
+print_r($result); 
 
 
 
