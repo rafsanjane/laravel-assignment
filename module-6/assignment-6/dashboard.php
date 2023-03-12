@@ -25,7 +25,7 @@
         <div class="row">
             <div class="column  ">
                 <h2>Dashboard - User List</h2>
-                <h4><a href="./assignment-6.html">Back</a></h4>
+                <h4><a href="./index.html">Back</a></h4>
                 <table>
                     <thead>
                         <tr>
