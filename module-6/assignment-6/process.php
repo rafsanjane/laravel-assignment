@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $uploads_dir = './';
     $file_name = uniqid() . '-' . $_FILES['profile_pic']['name'];
     $file_tmp_name = $_FILES['profile_pic']['tmp_name'];
+
     move_uploaded_file($file_tmp_name, $uploads_dir . $file_name);
 
     // Save user details to CSV file
