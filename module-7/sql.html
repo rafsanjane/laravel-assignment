@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মডিউল ৭ এর এসাইনমেন্ট</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <style>
+        span {
+            color: rgb(10, 163, 112);
+            font-weight: 900;
+            font-size: large;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Assignment-7</h1>
+        <pre><code>
+
+CREATE DATABASE xyz;   //  to create a database
+
+USE xyz_corp;   //  use/call database which you want to work with
+
+CREATE TABLE employees (   //  create employees table with its necessary headers
+id INT PRIMARY KEY,
+name VARCHAR(255),
+age INT,
+salary INT,
+department_id INT
+);
+
+CREATE TABLE departments (   //  create departments table with its necessary headers
+id INT PRIMARY KEY,
+name VARCHAR(255),
+manager VARCHAR(255)
+);
+ :</li>
+INSERT INTO employees (id, name, age, salary, department_id)   //  insert data/value into employees table
+VALUES (1, 'John Doe', 30, 50000, 1),
+(2, 'Jane Smith', 35, 60000, 2),
+(3, 'Bob Johnson', 40, 70000, 1);
+
+INSERT INTO departments (id, name, manager)   //  insert data/value into departments table
+VALUES (1, 'Sales', 'John'),
+(2, 'Marketing', 'Jane');
+</code></pre>
+
+        <code><pre>   //  a. To select all columns and rows from the employees table: <h5>   <span>|</span> SELECT * FROM employees;</h5><p>    Select All Exployees data from employees.</p></pre></code>
+        <code><pre>   //  b. Write a query to select only the name and salary columns of all employees with a salary greater than 50000.<h5>   <span>|</span> SELECT name, salary FROM employees WHERE salary > 50000;</h5><p>    SELECT name, salary Column from employees table and show data if  salary > 50000.</p></pre></code>
+        <code><pre>   //  c. Write a query to calculate the average salary of all employees. <h5>   <span>|</span> SELECT AVG(salary) FROM employees;</h5><p>    Average salary column for employees Table data .</p></pre></code>
+        <code><pre>   //  d. Write a query to count the number of employees who work in the "Marketing" department.<h5>   <span>|</span> SELECT COUNT(*) FROM employees WHERE department_id = (SELECT id FROM departments WHERE name = 'Marketing');</h5><p>    Counting How many exployees available in employees table who are belongs to Marketing Department .</p></pre></code>
+        <code><pre>   //  e. Write a query to update the salary column of the employee with an id of 1001 to 60000.<h5>   <span>|</span> UPDATE employees SET salary = 60000 WHERE id = 1;</h5><p>    Update exact employee salary whos id is 1 .</p></pre></code>
+        <code><pre>   //  f. Write a query to delete all employees whose salary is less than 30000.
+        <h5>  <span>|</span> >DELETE FROM employees WHERE salary < 30000;</h5><p>    Deleting employees information from employees Table whos salary under 30000 .</p></pre></code>
+
+        <h2>Departments table, here are the SQL commands to answer the questions:</h2>
+
+        <code><pre>   //  a. Write a query to select all columns and rows from the departments table.<h5>   <span>|</span> SELECT * FROM departments;</h5><p>     Select All columns data from departments. .</p></pre></code>
+        <code><pre>   //  b. Write a query to select only the name and manager columns of the "Finance" department.<h5>   <span>|</span> SELECT name, manager FROM departments WHERE name='Finance' ;</h5><p>    SELECT will show 2 columns (name, manager) FROM "departments" table who works in Finance departments.</p></pre></code>
+        <code><pre>   //  c. Write a query to calculate the total number of employees in each department.<h5>   <span>|</span> SELECT departments.name, COUNT(*) FROM employees JOIN departments ON
+                    employees.department_id=departments.id GROUP BY departments.name;</h5><p>    This query will show total count of peoples depanding on departments .</p></pre></code>
+        <code><pre>   //  d. Write a query to insert a new department called "Research" with a manager named "John Doe".<h5>   <span>|</span> INSERT INTO departments (id,name, manager) VALUES (3,'Research', 'John Doe' );</h5><p>    This query will input new data to our database in department table .</p></pre></code>
+    </div>
+
+</body>
+
+</html>
