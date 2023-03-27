@@ -14,39 +14,26 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
     <style>
-        span {
-            color: #ed2727;
-            font-weight: 900;
+        body {
+            margin-top: 50px;
         }
     </style>
 </head>
 
 <body>
-
     <div class="container">
-
-        <h1>Assignment-7</h1>
-        <?php
-        echo "<span>" . $_SESSION['error'] . "</span>";
-
-        ?>
 
         <div class="row">
             <div class="column column-50">
-                <h4>Login Form</h4>
-                <form method="POST" action="./welcome.php">
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
+                <?php
 
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password">
+                echo "<h3> Login successful </h3>";
+                echo "<h1> Welcome, " . $_SESSION['first_name'] . "</h1>";
 
-                    <input type="submit" value="Login">
-                </form>
+                ?>
 
             </div>
         </div>
-
     </div>
 
 </body>
