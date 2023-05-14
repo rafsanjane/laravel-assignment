@@ -2,7 +2,7 @@
 
 ## Here is a brief description of the purpose of each folder in a Laravel project:
 
-app: This folder contains the core files of the application, including models, controllers, and other PHP classes.
+`#ffffff` app: `#000000` This folder contains the core files of the application, including models, controllers, and other PHP classes.
 
 bootstrap: The bootstrap folder holds the files responsible for initializing the Laravel framework and loading necessary dependencies.
 
