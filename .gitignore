@@ -7,7 +7,7 @@
 *.csv
 *.jpg
 *.jpeg
-*.png
+//*.png
 *.gif
 *.zip
 *.txt
