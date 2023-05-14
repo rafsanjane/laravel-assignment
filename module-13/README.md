@@ -1,5 +1,6 @@
-Part 2: Laravel Folder Structure
-Here is a brief description of the purpose of each folder in a Laravel project:
+### Part 2: Laravel Folder Structure
+
+# Here is a brief description of the purpose of each folder in a Laravel project:
 
 app: This folder contains the core files of the application, including models, controllers, and other PHP classes.
 
